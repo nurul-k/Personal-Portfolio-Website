@@ -2,7 +2,7 @@
 Welcome to my portfolio website! This project showcases my journey as a budding web developer. Built with HTML, CSS, and JavaScript, it reflects my skills, projects, and passion for creating responsive and engaging web experiences.
 
 ## 🌐 Live Demo
-You can view the live version of my portfolio here (replace # with your link).
+You can view the live version of my portfolio here (https://github.com/nurul-khan786/Personal-Portfolio-Website/blob/439a490ab65dabef6cb3acd5a9cb47fc6ccd429a/Screen%20Recording.mp4).
 
 ## 🛠️ Technologies Used
 HTML5: For structuring the web pages.
