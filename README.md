@@ -8,6 +8,7 @@ You can view the live version of my portfolio here (replace # with your link).
 HTML5: For structuring the web pages.
 CSS3: For styling and responsive design.
 JavaScript: For interactive elements and dynamic content.
+
 ## 📑 Features
 Responsive Design: Optimized for desktop, tablet, and mobile devices.
 Project Showcase: Displays my key projects with descriptions and links.
@@ -17,10 +18,15 @@ Contact Form: Allows visitors to connect with me easily.
 graphql
 Copy code
 |-- index.html            # Main HTML file
-|-- style.css             # Main CSS file for styling
-|-- script.js             # JavaScript file for interactivity
+
+|-- portfolio.css             # Main CSS file for styling
+
+|-- portfolio.js             # JavaScript file for interactivity
+
 |-- assets/               # Images and other assets
+
 |-- README.md             # Documentation file
+
 ## 🚀 Getting Started
 1. Clone the Repository
 bash
@@ -36,8 +42,11 @@ I would like to express my gratitude to my mentors, online resources, and the we
 Feel free to reach out if you'd like to collaborate or have any questions:
 
 Email: noorulk321@gmail.com
-GitHub: Your GitHub Profile
+
+GitHub: nurul-khan786
+
 LinkedIn: @Nurul Khan
+
 Thank you for visiting my portfolio! 😊
 
 
