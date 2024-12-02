@@ -1,0 +1,113 @@
+*{
+    margin:0px;
+    padding: 0px;
+}
+
+/* Body styling for background and text alignment */
+body{
+    background-color: #EDD3C4;
+    text-align: center;
+}
+
+/* Container for centering the game grid */
+.container{
+    height: 70vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.section{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.players-turn{
+    font-size: 2rem;
+    font-family: sans-serif;
+    color: #ffffc7;
+    background-color: black;
+    border-radius: 1rem;
+    padding: 0.2rem 0.7rem;
+}
+/* New Game button styling */
+#new-btn{
+    margin: 1.5rem 0;
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #3b60e4;
+    color:rgba(255, 255, 255, 0.578);
+    border-radius: 1rem;
+    border: none;
+}
+
+/* Hover effect for New Game button */
+#new-btn:hover{
+    border: 0.2rem double black;
+}
+h1{
+    color: rgba(88, 3, 88, 0.992);
+}
+/* Game grid container */
+.game{
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap; /* Wraps the 9 boxes */
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin; /* Space between boxes */
+}
+
+/* Individual box styling for the Tic-Tac-Toe grid */
+.box{
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: 0.2rem double black;
+    box-shadow: 0 0 1rem rgba(0, 0, 0, 0.5); /* Box shadow effect */
+    font-size: 10vmin;
+    color: black;
+    background-color: #C8ADC0
+}
+
+/* Hover effect for boxes */
+ .box:hover{
+    border: 0.2rem double red;
+ }
+
+/* Reset Game button styling */
+#reset-btn{
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #3b60e4;
+    color:rgba(136, 17, 17, 0.716);
+    border-radius: 1rem;
+    border: none;
+}
+
+/* Hover effect for Reset Game button */
+#reset-btn:hover{
+    border: 0.1rem solid rgb(88, 8, 8);
+}
+
+/* Message styling for winner announcement */
+#msg{
+    color: #ffffc7;
+    font-size: 8vmin;
+}
+
+/* Container for the message and alignment */
+.msg-container{
+     height: 100vmin;
+     display: flex;
+     justify-content: center;
+     align-items: center;
+     flex-direction: column;
+     gap: 4rem;
+}
+
+/* Class to hide the message container */
+.hide{
+    display: none;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Signup & Login form</title>
+    <style>
+         * {
+        margin: 0;
+        padding: 0;
+      }
+      legend{
+        color: azure;
+      }
+     
+      form{
+        background-color: rgb(53, 7, 7);
+        
+      }
+      #content{
+        display: flex;
+        justify-content: center;
+        color: aliceblue;
+        background-color: rgb(70, 16, 16);
+        height: 3vmax;
+        font-size: 1.6rem;
+        padding-top: 1%;
+       
+        
+      }
+      table{
+        color: rgb(101, 154, 88);
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+      button{
+       
+        background-color: yellow;
+      }
+     
+
+    </style>
+
+
+</head>
+<body>
+    <form action="Form"> 
+       <fieldset>
+        <div id="content">Create Your Account</div>
+        <table> 
+            <tr>
+                <td> <input type="text" placeholder="Enter your name" name ="fullName" required> </td>
+            </tr>
+            <tr>
+                <td> <input type="email" placeholder="Enter your email" name ="email" required> </td>
+            </tr>
+            <tr>
+                <td> <input type="password" placeholder="Enter your password" name ="password" required> </td>
+            </tr>
+            <tr>
+                <td> <input type="password" placeholder="Confirm password" name ="ConfirmPassword" required> </td>
+            </tr>
+                <tr>
+                <td> <input type="button"  value="Signup"> </input>  </td>
+            </tr>
+            <tr>
+                <td>
+                    Already have an account? <a href="login.html">Login</a>
+                </td>
+            </tr>
+        </table>
+       </fieldset>
+    </form>
+
+</body>
+</html>

@@ -1,0 +1,199 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+     <!-- Specifies character encoding for the document -->
+    <meta charset="UTF-8" />
+      <!-- Ensures the website is responsive and adjusts to different screen sizes -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+     <!-- Link to external CSS file for styling the portfolio -->
+    <link rel="stylesheet" href="Portfolio.css">   
+    <title>Nurul - Developer Portfolio</title>
+   
+  </head>
+  <body>
+    <!-- Header section with navigation menu -->
+    <header>
+      <nav>
+        <div class="left">Nurul's Portfolio</div>
+        <!--Menu  Icon -->
+        <img src="bars-solid.svg" class="menu-icon" id="menu-icon" alt="Menu-icon"/>
+        <div class="right">
+          <ul id="nav-links">
+            <li><a href="index.html">Home </a></li>
+            <li><a href="Portfolio_about.html">About Me </a></li>
+            <li><a href="Portfolio_services.html">Services </a></li>
+            <li><a href="Portfolio_projects.html">Projects </a></li>
+            <li><a href="Portfolio_contact.html">Contact me </a></li>
+          </ul>
+        </div>        
+      </nav>
+    </header>
+
+    <main>
+       <!-- First section: Introduction and call-to-action buttons -->
+      <section class="firstSection">
+        <div class="leftSection">
+          <!-- Introduction text with name highlighted in purple color -->
+          Hi, My name is <span class="purple"> Nurul Khan </span>
+          <div>And I am a passionate</div>
+          <!-- Placeholder where dynamic text appears (like "Front-end Developer") -->
+          <span id="element"></span>
+          <div class="buttons">
+            <button class="btn">Download Resume</button>  <!-- button for dowload resume -->
+            <button class="btn">LinkedIn</button>  <!-- Button for my linked In profile page -->
+          </div>
+        </div>
+           <div class="rightSection">
+              <!-- Image on the right side of the introduction section -->
+              <img src="pt.png" alt="" />  
+            </div> 
+        
+      </section>
+
+      <hr />
+
+      <!-- Second section: Showcasing skills -->
+      <section class="secondSection">
+        <span class="text-gray">What I have done so far</span>
+        <h1>My Skills</h1>
+        <div class="box">
+              <!-- Each "skill" div represents a specific skill with an image, title, and description -->
+          <div class="skill">
+            <img class="skill-image" src="DSA.jpg" alt="DSA in Java" />
+            <div class="skill-title">DSA in Java</div>
+            <div class="skill-desc">
+              Solid foundation in data structures such as arrays, linked lists,
+              stacks, queues, trees, and graphs. Understanding of algorithmic
+              concepts including sorting (e.g., bubble sort, quicksort) and
+              searching (e.g., binary search). Ability to implement and optimize
+              algorithms for efficient problem-solving and performance.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="javalogo.png" alt="Java" />
+            <div class="skill-title">Java</div>
+            <div class="skill-desc">
+              Proficient in Java, including core object-oriented principles such
+              as classes, inheritance, polymorphism, and encapsulation.
+              Experienced in writing efficient code, managing memory, and
+              understanding Java libraries and APIs. Developed basic console and
+              GUI applications, demonstrating solid grasp of Java's syntax and
+              structure.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="html.png" alt="HTML" />
+            <div class="skill-title">HTML</div>
+            <div class="skill-desc">
+              Skilled in crafting well-structured and semantic web pages using
+              HTML5. Knowledgeable in creating accessible content, incorporating
+              multimedia elements, and using HTML tags effectively to ensure a
+              clean and organized webpage structure.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="css.png" alt="CSS" />
+            <div class="skill-title">CSS</div>
+            <div class="skill-desc">
+              Competent in designing responsive and visually appealing web
+              layouts with CSS3. Experienced in using selectors, properties, and
+              values to style web elements. Familiar with advanced techniques
+              such as Flexbox and Grid to create adaptable and attractive
+              interfaces.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="javascript.png" alt="JavaScript" />
+            <div class="skill-title">JavaScript</div>
+            <div class="skill-desc">
+              Capable of enhancing web pages with basic JavaScript
+              functionality. Proficient in manipulating the DOM, handling
+              events, and implementing simple algorithms to add interactivity
+              and improve user experience on websites.
+            </div>
+          </div>
+
+          <div class="skill">
+            <img class="skill-image" src="reactjs.png" alt="React JS" />
+            <div class="skill-title">React JS</div>
+            <div class="skill-desc">
+              I have gained hands-on experience with React.js, developing
+              dynamic and responsive web applications. My commitment to
+              continuous learning and improvement drives me to stay updated with
+              the latest trends and best practices in React.js.I am eager to
+              apply my React.js skills and continue growing in a professional
+              setting
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+   
+      <!-- Footer section with additional links and social media -->
+    <footer>
+      <div class="footer">
+          <!-- First column: portfolio title -->
+        <div class="footer-first">
+          <h3>Nurul's Developer Portfolio</h3>
+        </div>
+         <!-- Second column: additional helpful links -->
+        <div class="footer-second">
+          <ul>
+            <li>Help</li>
+            <li>About</li>
+            <li>More</li>
+          </ul>
+        </div>
+         <!-- Third column: social media links -->
+        <div class="footer-third">
+          <ul>
+            <li>Instagram</li>
+            <li>Whatsapp</li>
+            <li>SnapChat</li>
+          </ul>
+        </div>
+         <!-- Fourth column: professional links -->
+        <div class="footer-fourth">
+          <ul>
+            <li>LinkedIn</li>
+            <li>CV</li>
+            <li>service</li>
+          </ul>
+        </div>
+      </div>
+  
+        <!-- Copyright section at the bottom -->
+      <div class="footer-rights">
+        Copyright &#169; nurulsportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+       <!-- Typed.js library for text animation -->
+    <script src="https://unpkg.com/typed.js@2.1.0/dist/typed.umd.js"></script>
+
+  
+    <script>
+     // Selecting the menu icon and the navigation links
+      const menuIcon = document.getElementById('menu-icon');
+      const navLinks = document.getElementById('nav-links');
+
+      // Add click event listener to toggle the "active" class on the navigation links
+      menuIcon.addEventListener('click', function () {
+        navLinks.classList.toggle('active');
+      });
+
+
+      // Animation setup using Typed.js for displaying dynamic text
+      var typed = new Typed("#element", {
+        strings: ["front-end Developer", "back-end Developer", "Web developer"],
+        typeSpeed: 70,
+      });
+    </script>
+    <!-- Link to external JavaScript file for additional functionality -->
+    <script src="portfolio.js"></script>
+  </body>
+</html>

@@ -1,0 +1,1040 @@
+/* Base styling */
+/* Applies margin, padding, and box-sizing globally to all elements */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  
+} 
+
+/* Body styling */
+/* Sets the background color, text color, and border for the body */
+body {
+  background-color: rgb(8, 8, 44);
+  color: white;
+  border: 0.3rem solid rgba(102, 76, 9, 0.779);
+  overflow-x: hidden; /* Prevents horizontal scrolling */
+}
+
+/* Navbar styling */
+nav {
+  display: flex; /* Flexbox layout for navbar */
+  justify-content: space-around; /* Spaces out nav items */
+  align-items: center;
+  height: 5.8rem;
+  background-color: rgb(17, 17, 54); /* Navbar background color */
+  border: 0.3rem double black; /* Double border */
+}
+
+/* Navbar list (ul) and list items (li) styling */
+nav ul {
+  display: flex; /* Horizontal list */
+  justify-content: center; /* Center the list items */
+  flex-wrap: wrap; /* Wrap if the screen is small */
+}
+
+/* List item styling in the navbar */
+nav ul li {
+  list-style: none; /* Removes bullet points */
+  margin: 0 2rem; /* Adds space between items */
+}
+
+/* Styling for the links inside list items */
+nav ul li a {
+  text-decoration: none; /* Removes underline */
+  color: white;
+  font-size: 1rem; /* Link font size */
+}
+
+/* Hover effect for navbar links */
+nav ul li a:hover {
+  color: rgb(86, 73, 51); /* Changes text color on hover */
+  font-size: 1.03rem; /* Slightly increases the font size on hover */
+}
+
+/* Left section in the navbar (branding or logo) */
+.left {
+  font-size: 1.6rem;
+  color: rgb(102, 121, 126);
+}
+
+/* Mobile menu icon (hidden by default) */
+.menu-icon {
+  display: none;
+  width: 2rem;
+  cursor: pointer; /* Changes cursor to pointer */
+}
+
+/* First section (header or hero) styling */
+.firstSection {
+  display: flex; /* Flex layout */
+  justify-content: space-around; /* Space out content */
+  margin: 6rem 0;
+  align-items: center;
+  flex-wrap: wrap; /* Allow wrapping for smaller screens */
+}
+
+/* Divs inside the first section */
+.firstSection > div {
+  width: 35rem; /* Width of each section */
+}
+
+/* Left section text styling */
+.leftSection {
+  font-size: 3rem; /* Large font for headings */
+}
+
+/* Button container in the left section */
+.leftSection .buttons {
+  padding: 2.5rem 0;
+}
+
+/* Button styling */
+.leftSection .btn {
+  padding: 0.8rem;
+  background-color: #636373;
+  color: rgb(27, 22, 127);
+  border: 0.3rem solid rgba(255, 255, 255, 0.425);
+  border-radius: 0.3rem;
+  font-size: 1.8rem;
+  cursor: pointer; /* Pointer cursor on hover */
+}
+
+/* Hover effect for buttons */
+.leftSection .btn:hover {
+  border: 0.3rem solid gold; /* Changes border color */
+  font-size: 2rem; /* Increases font size */
+  color: goldenrod; /* Changes text color */
+}
+
+/* Image in the right section */
+.rightSection img {
+  width: 30rem; /* Image width */
+}
+
+/* Color classes */
+.purple {
+  color: blueviolet;
+}
+
+.text-gray {
+  color: gray;
+}
+
+#element {
+  color: blueviolet;
+}
+
+/* Horizontal line (hr) styling */
+main hr {
+  background-color: #9c97f1;
+  height: 0.1rem;
+  margin: 2rem 2.5rem;
+}
+
+/* Second section (Skills/Portfolio) styling */
+.secondSection {
+  max-width: 80rem;
+  margin: 2rem 0;
+  height: 40rem;
+  text-align: center; /* Centers text */
+}
+
+/* Gray text in the second section */
+.secondSection .text-gray {
+  color: gray;
+  font-size: 1.8rem;
+  margin-left: 12rem;
+  position:relative;
+}
+
+/* Heading in the second section */
+.secondSection h1 {
+  margin-bottom: 1.2rem;
+  font-size: 1.8rem;
+  color: rgb(193, 167, 167);
+  margin-left: 12rem;
+}
+ 
+/* Box inside the second section */
+.secondSection .box {
+  background-color: rgb(200, 128, 167);
+  width: 80rem; /* Full width for responsiveness */
+  display: flex;
+  text-align: center;
+  margin-left: 7.5rem;
+  justify-content: space-around; /* Space out items inside the box */
+  border-radius: 1rem;
+  min-height: 30rem; /* Ensures a minimum height to avoid overlap */
+}
+
+/* Skill card inside the second section */
+.skill {
+  background-color: rgba(199, 187, 187, 0.988);
+  width: 100%; /* Full width on smaller screens */
+  max-width: 12rem; /* Limits width on larger screens */
+  margin: 1.2rem 0.5rem; /* Adds space around each skill card */
+  text-align: center;
+  border-radius: 0.8rem;
+  position: relative;
+}
+
+/* Image inside the skill card */
+.skill-image {
+  width: 4rem;
+  height: auto; /* Keeps aspect ratio */
+  margin-bottom: 0.8rem;
+  position: relative;
+  border-radius: 25rem; /* Circular image */
+}
+
+/* Skill title styling */
+.skill-title {
+  font-size: 1.1rem;
+  font-weight: bold;
+  margin-bottom: 0.7rem;
+  position: relative;
+}
+
+/* Skill description styling */
+.skill-desc {
+  font-size: 0.9rem;
+  color: gray;
+  line-height: 1.3rem;
+  text-align: center;
+  position: relative;
+}
+
+/* Footer Section */
+footer {
+  background-color: #090619;
+  padding: 1.2rem 6rem; /* Adds padding inside the footer */
+  margin: auto; /* Centers the footer */
+  position: relative;
+}
+
+/* Footer content container */
+.footer {
+  display: flex;
+  justify-content: space-evenly; /* Even spacing for footer items */
+}
+
+/* Footer lists */
+.footer ul {
+  list-style: none; /* Removes bullet points */
+  color: silver;
+}
+
+/* First footer column */
+footer .footer-first {
+  font-size: 1.2rem;
+}
+
+/* Footer column width */
+.footer > div {
+  width: 12rem;
+}
+
+/* Footer rights section */
+footer .footer-rights {
+  color: gray;
+  text-align: center;
+  padding: 1.3rem 0;
+}
+ /* Responsive Design Media Quries */
+/* Media queries for various screen sizes follow this section */
+  
+/* Mobile adjustments for small screens (up to 344px) */
+  @media only screen and (max-width: 344px){
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     
+      
+    } 
+    /* Body adjustments for small screens */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Navbar adjustments */
+    nav {
+      background-color: rgb(23, 23, 78);
+    } 
+   .left{
+    color:  rgb(50, 110, 127);
+    font-size: 2rem;
+    margin-right: 10.2rem;
+   }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(9, 9, 78);
+      position: absolute;
+      top: 6rem;
+      width: 9rem;
+      left: 10.5rem;
+      text-align: center;
+      font-size: 4.6rem;
+      border: 0.3rem solid rgba(102, 76, 9, 0.779); 
+      border-radius: 2rem 0 1rem 2rem;
+      overflow: hidden;
+    }
+    nav ul.active{
+      display: flex;
+    }
+    .menu-icon{
+      display: block;
+      margin-right: 1rem;
+      width: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      color: rgba(174, 140, 53, 0.779);
+      font-weight: bolder;
+      position: relative;
+      white-space: nowrap;
+    }  
+  
+  
+    /* First section responsiveness */
+    .firstSection {
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+  
+    .firstSection > div {
+      width: 90%;
+    }
+  
+    .leftSection {
+      font-size: 2rem;
+    }
+  
+    .leftSection .btn {
+      font-size: 1.5rem;
+    }
+  
+    .rightSection img {
+      display: none;
+    }
+  
+    /* Second section responsiveness */
+    .secondSection {
+      margin-left: -1.8rem;
+      height: auto;
+      overflow: hidden;
+    }
+  
+    .secondSection .text-gray{
+      display: none;
+      white-space: nowrap;
+      font-size: 1.5rem;
+      
+    }
+     .secondSection h1 {
+      padding-bottom: 3rem;
+      width: 10rem;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 7.7rem;
+    }
+  
+    /* Updated for column direction and better fit on mobile */
+    .secondSection .box {
+      overflow-x: auto;
+      flex-direction: column;
+      display: flex;
+      width: 60%; /* Full width */
+      align-items: center;
+      margin-left: 5.7rem;
+    }
+    
+  
+    /* Centering and widening the skill section */
+    div.skill {
+      height: 30rem;
+      width: 17rem; /* Increased width to make it wider */ /* Centered on the screen */
+      background-color: rgba(199, 187, 187, 0.988);
+       
+    }
+    .skill-desc{
+      height: auto;
+      width:auto; 
+    }
+  
+    /* Footer adjustments */
+    footer {
+      padding: 1rem;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .footer > div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /* Mobile adjustments for small screens (from 345px up to 399px) */
+  @media only screen and (min-width: 345px) and (max-width: 399px){
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     
+      
+    } 
+    /* Body adjustments for small screens */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Navbar adjustments */
+    nav {
+      background-color: rgb(23, 23, 78);
+    } 
+   .left{
+    color:  rgb(50, 110, 127);
+    font-size: 2rem;
+    margin-right: 10.2rem;
+   }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(9, 9, 78);
+      position: absolute;
+      top: 6rem;
+      width: 9rem;
+      left: 14rem;
+      text-align: center;
+      font-size: 4.6rem;
+      border: 0.3rem solid rgba(102, 76, 9, 0.779); 
+      border-radius: 2rem 0 1rem 2rem;
+      overflow: hidden;
+    }
+    nav ul.active{
+      display: flex;
+    }
+    .menu-icon{
+      display: block;
+      margin-right: 1rem;
+      width: 1.5rem;
+    }
+    nav ul li a {
+      font-size: 1rem;
+      color: rgba(174, 140, 53, 0.779);
+      font-weight: bolder;
+      position: relative;
+      white-space: nowrap;
+    }  
+  
+  
+    /* First section responsiveness */
+    .firstSection {
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+  
+    .firstSection > div {
+      width: 90%;
+    }
+  
+    .leftSection {
+      font-size: 2rem;
+    }
+  
+    .leftSection .btn {
+      font-size: 1.5rem;
+    }
+  
+    .rightSection img {
+      display: none;
+    }
+  
+    /* Second section responsiveness */
+    .secondSection {
+      height: auto;
+      overflow: hidden;
+    }
+  
+    .secondSection .text-gray{
+      display: none;
+      white-space: nowrap;
+      font-size: 1.5rem;
+      
+    }
+     .secondSection h1 {
+      padding-bottom: 3rem;
+      width: 10rem;
+      white-space: nowrap;
+      overflow: hidden;
+      margin-left: 6.2rem;
+    }
+  
+    /* Updated for column direction and better fit on mobile */
+    .secondSection .box {
+      overflow-x: auto;
+      flex-direction: column;
+      display: flex;
+      width: 60%; /* Full width */
+      align-items: center;
+      margin-left: 4.5rem;
+    }
+    
+  
+    /* Centering and widening the skill section */
+    div.skill {
+      height: 30rem;
+      width: 17rem; /* Increased width to make it wider */ /* Centered on the screen */
+      background-color: rgba(199, 187, 187, 0.988);
+       
+    }
+    .skill-desc{
+      height: auto;
+      width:auto; 
+    }
+  
+    /* Footer adjustments */
+    footer {
+      padding: 1rem;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .footer > div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /* For smaller devices like mobile (from 400px up to 500px) */
+  @media only screen and (min-width: 400px) and (max-width: 500px){
+   
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     
+      
+    } 
+    /* Body adjustments for small screens */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Navbar adjustments */
+    nav {
+      background-color: rgb(23, 23, 78);
+    } 
+   .left{
+    color:  rgb(50, 110, 127);
+    font-size: 2rem;
+    margin-right: 10.2rem;
+   }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(9, 9, 78);
+      position: absolute;
+      top: 6rem;
+      width: 10rem;
+      left: 15rem;
+      text-align: center;
+      font-size: 4.6rem;
+      border: 0.3rem solid rgba(102, 76, 9, 0.779); 
+      border-radius: 2rem 0 1rem 2rem;
+      overflow: hidden;
+    }
+    nav ul.active{
+      display: flex;
+    }
+    .menu-icon{
+      display: block;
+      margin-right: 1rem;
+      width: 1.6rem;
+    }
+    nav ul li a {
+      font-size: 1.2rem;
+      color: rgba(174, 140, 53, 0.779);
+      font-weight: bolder;
+      position: relative;
+      white-space: nowrap;
+    }  
+  
+  
+    /* First section responsiveness */
+    .firstSection {
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+  
+    .firstSection > div {
+      width: 90%;
+    }
+  
+    .leftSection {
+      font-size: 2rem;
+    }
+  
+    .leftSection .btn {
+      font-size: 1.5rem;
+    }
+  
+    .rightSection img {
+      display: none;
+    }
+  
+    /* Second section responsiveness */
+    .secondSection {
+      height: auto;
+      overflow: hidden;
+    }
+  
+    .secondSection .text-gray{
+      display: none;
+      white-space: nowrap;
+      font-size: 1.5rem;
+      
+    }
+     .secondSection h1 {
+      margin-left: 8.5rem;
+      padding-bottom: 3rem;
+      width: 10rem;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  
+    /* Updated for column direction and better fit on mobile */
+    .secondSection .box {
+      overflow-x: auto;
+      flex-direction: column;
+      display: flex;
+      padding: 1rem;
+      width: 60%; /* Full width */
+      align-items: center;
+      margin-left: 5.5rem;
+    }
+    
+  
+    /* Centering and widening the skill section */
+    div.skill {
+      height: 30rem;
+      width: 17rem; /* Increased width to make it wider */ /* Centered on the screen */
+      background-color: rgba(199, 187, 187, 0.988);
+       
+    }
+    .skill-desc{
+      height: auto;
+      width:auto; 
+    }
+  
+    /* Footer adjustments */
+    footer {
+      padding: 1rem;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .footer > div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /* Mobile adjustments for small screens (from 500px up to 600px) */
+  @media only screen and (min-width: 500px) and (max-width: 600px){
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+     
+      
+    } 
+    /* Body adjustments for small screens */
+    body {
+      margin: 0;
+      padding: 0;
+    }
+    /* Navbar adjustments */
+    nav {
+      background-color: rgb(23, 23, 78);
+    } 
+   .left{
+    color:  rgb(50, 110, 127);
+    font-size: 2rem;
+    margin-right: 10.2rem;
+   }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(9, 9, 78);
+      position: absolute;
+      top: 6rem;
+      width: 10rem;
+      left: 22rem;
+      text-align: center;
+      font-size: 4.6rem;
+      border: 0.3rem solid rgba(102, 76, 9, 0.779); 
+      border-radius: 2rem 0 1rem 2rem;
+      overflow: hidden;
+    }
+    nav ul.active{
+      display: flex;
+    }
+    .menu-icon{
+      display: block;
+      margin-left: 5rem;
+    }
+    nav ul li a {
+      font-size: 1.2rem;
+      color: rgba(174, 140, 53, 0.779);
+      font-weight: bolder;
+      position: relative;
+      white-space: nowrap;
+    }  
+  
+  
+    /* First section responsiveness */
+    .firstSection {
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+  
+    .firstSection > div {
+      width: 90%;
+    }
+  
+    .leftSection {
+      font-size: 2rem;
+    }
+  
+    .leftSection .btn {
+      font-size: 1.5rem;
+    }
+  
+    .rightSection img {
+      display: none;
+    }
+  
+    /* Second section responsiveness */
+    .secondSection {
+      height: auto;
+      overflow: hidden;
+      margin-left: 2rem;
+    }
+  
+    .secondSection .text-gray{
+      display: none;
+      white-space: nowrap;
+      font-size: 1.5rem;
+      
+    }
+     .secondSection h1 {
+      margin-left: 9.5rem;
+      padding-bottom: 3rem;
+      width: 10rem;
+      white-space: nowrap;
+      overflow: hidden;
+    }
+  
+    /* Updated for column direction and better fit on mobile */
+    .secondSection .box {
+      overflow-x: auto;
+      flex-direction: column;
+      display: flex;
+      padding: 1rem;
+      width: 60%; /* Full width */
+      align-items: center;
+      margin-left: 5.2rem;
+    }
+    
+  
+    /* Centering and widening the skill section */
+    div.skill {
+      height: 30rem;
+      width: 17rem; /* Increased width to make it wider */ /* Centered on the screen */
+      background-color: rgba(199, 187, 187, 0.988);
+       
+    }
+    .skill-desc{
+      height: auto;
+      width:auto; 
+    }
+  
+    /* Footer adjustments */
+    footer {
+      padding: 1rem;
+    }
+  
+    .footer {
+      flex-direction: column;
+    }
+  
+    .footer > div {
+      width: 100%;
+      text-align: center;
+    }
+  }
+  /* For small devices like I pad mini (from 601px up to 768px) */
+  @media only screen and (min-width: 601px) and (max-width: 768px){
+    /* Body adjustments for small screens */
+    body {
+      padding: 0;
+      border: 0.3rem solid rgba(102, 76, 9, 0.779);
+    }
+  
+    /* Navbar adjustments */
+    nav {
+      background-color: rgb(23, 23, 78);
+    } 
+   .left{
+    color:  rgb(50, 110, 127);
+    font-size: 2rem;
+    margin-left: 2rem;
+   }
+  
+    nav ul {
+      display: none;
+      flex-direction: column;
+      background-color: rgb(9, 9, 78);
+      position:absolute;
+      top: 8rem;
+      width: 10rem;
+      left: 37rem;
+      text-align: center;
+      font-size: 5.6rem;
+      border: 0.3rem solid rgba(102, 76, 9, 0.779); 
+      border-radius: 2rem 0 1rem 2rem;
+      
+    }
+    nav ul.active{
+      display: flex;
+    }
+    .menu-icon{
+      display: block;
+      margin-left: 27rem;
+    }
+    nav ul li a {
+      font-size: 1.2rem;
+      color: rgba(174, 140, 53, 0.779);
+      font-weight: bolder;
+      white-space: nowrap;
+    } 
+  
+    /* First section responsiveness */
+    .firstSection {
+      flex-direction: column;
+      margin: 2rem 0;
+    }
+  
+    .firstSection > div {
+      width: 29rem;
+    }
+  
+    .leftSection {
+      font-size: 2rem;
+    }
+  
+    .leftSection .btn {
+      font-size: 1.5rem;
+    }
+  
+    .rightSection img {
+      width: 100%;
+    }
+  
+    /* Second section responsiveness */
+    .secondSection {
+      height: auto;
+    }
+  
+    .secondSection .text-gray, .secondSection h1 {
+      font-size: 2rem;
+      margin-left: 1rem;
+    }
+  
+    .secondSection .box {
+         flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          width: 55%;
+          height: 139rem;
+          margin-left: 10.9rem;
+    }
+  
+    div.skill {
+      height: 45rem;
+      max-width: 26rem;
+      margin: 1.2rem 0.8rem;
+    }
+     .skill-title{
+      font-size: 1.6rem;
+     }
+     .skill-desc{
+      font-size: 1.5rem;
+     }
+    /* Footer adjustments */
+    footer {
+      padding: 1rem;
+    }
+  
+    
+  }
+  
+  /* For small devices like tablet (from 769px up to 820px) */
+  @media only screen and (min-width: 769px) and (max-width: 820px) {
+    
+   *{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+   }
+    nav ul li {
+        margin: 0 1.5rem;
+    }
+    .firstSection > div {
+        width: 80%;
+        justify-content: space-around;
+    }
+    .rightSection img {
+        width: 50%;
+    }
+    .leftSection {
+        font-size: 2.8rem;
+    }
+    /* Second section responsiveness  */
+    .secondSection{
+      height: 150rem;
+    }
+  .secondSection .text-gray{
+    margin-right: 10rem;
+  }
+  
+  .secondSection h1 {
+    margin-bottom: 1.2rem;
+    margin-right: 10rem;
+  }
+    .secondSection .box {
+          flex-direction: column;
+          align-items: center;
+          justify-content: space-between;
+          padding: 1rem;
+          width: 60%;
+          height: 139rem;
+          margin-left: 10rem;
+    }
+  
+     div.skill {
+      max-width: 26rem;
+      margin: 1.2rem 0.8rem;
+    }
+    
+    .skill-desc{
+      font-size: 1.4rem;
+      line-height: 1.5rem;
+    }  
+  
+    footer {
+      padding: 1.2rem; /* Adjust padding for the footer */
+    }
+  }
+  /* For small devices like I pad pro (from 821px up to 1054px) */ 
+  @media only screen and (min-width: 821px) and (max-width: 1054px) {
+    
+    *{
+     margin: 0;
+     padding: 0;
+     box-sizing: border-box;
+    }
+     nav ul li {
+         margin: 0 1.5rem;
+     }
+     .firstSection > div {
+         width: 80%;
+         margin-left: 12rem;
+     }
+     .rightSection img {
+         width: 25rem;
+     }
+     .leftSection {
+         font-size: 3.6rem;
+     }
+     /* Second section responsiveness  */
+     .secondSection{
+       height: 150rem;
+     }
+   .secondSection .text-gray{
+     margin-right: 10rem;
+     font-size: 2rem;
+   }
+   
+   .secondSection h1 {
+     margin-bottom: 1.2rem;
+     margin-right: 10rem;
+     font-size: 3rem;
+   }
+     .secondSection .box {
+           flex-direction: column;
+           align-items: center;
+           justify-content: space-between;
+           padding: 1rem;
+           width: 60%;
+           height: 139rem;
+           margin-left: 12.5rem;
+     }
+   
+      div.skill {
+       max-width: 26rem;
+       margin: 1.2rem 0.8rem;
+     }
+     
+     .skill-desc{
+       font-size: 1.4rem;
+       line-height: 1.5rem;
+     }  
+   
+     footer {
+       padding: 1.2rem; /* Adjust padding for the footer */
+     }
+   } 
+  /* For little bit large  devices like Nest Hub Max (from 1055px up to 1355px) */
+  @media only screen and (min-width: 1055px) and (max-width: 1355px) { 
+    *{
+      overflow-x: auto;
+    }
+    .secondSection{
+      height: auto;
+    }
+    .secondSection .text-gray {
+      margin-right: 10rem;
+    }
+    
+    .secondSection h1 {
+      margin-bottom: 1.2rem;
+      margin-right: 10rem;
+    } 
+    .secondSection .box {
+      margin-left: 2rem;
+      height: auto;
+      width: 75rem;
+    }   
+    .skill {
+      height: 25rem;
+      width: 35%; /* Adjust skill box width for better tablet layout */
+      margin: 1.2rem 0.8rem;
+    }
+  }
+  
+  
+  
+  

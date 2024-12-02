@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <!-- Specifies character encoding for the HTML document -->
+  <meta charset="utf-8">
+  <!-- Sets the viewport to ensure proper scaling on different devices -->
+  <meta name="viewport" content="width=device-width">
+  <!-- Title of the calculator web page -->
+  <title>Calculate me! - A Calculator made by me</title>
+  <!-- Linking to the external CSS files for styling -->
+  <link href="Calculator1.css" rel="stylesheet" type="text/css" />
+  <link href="Calculator.css" rel="stylesheet" type="text/css" />
+</head>
+
+<body>
+  <!-- Main heading for the calculator -->
+  <h1 class="text-center">Welcome to Calculate me! </h1>
+
+  <!-- Container for calculator layout with flexbox properties -->
+  <div class="container flex flex-col items-center  mx-auto m-w-20">
+
+    <!-- Calculator outline -->
+    <div class="outline">
+      
+      <!-- Input row for displaying numbers and results -->
+      <div class="row">
+        <input class="input" type="text" />
+      </div>
+
+      <!-- Rows for calculator buttons -->
+      <div class="row">
+        <button class="button">7</button>
+        <button class="button">8</button>
+        <button class="button">9</button>
+        <button class="button">*</button>
+      </div>
+
+      <div class="row">
+        <button class="button">4</button>
+        <button class="button">5</button>
+        <button class="button">6</button>
+        <button class="button">/</button>
+      </div>
+
+      <div class="row">
+        <button class="button">1</button>
+        <button class="button">2</button>
+        <button class="button">3</button>
+        <button class="button">+</button>
+      </div>
+
+      <div class="row">
+        <button class="button">0</button>
+        <button class="button">.</button>
+        <button class="button">=</button>
+        <button class="button">-</button>
+      </div>
+
+      <div class="row">
+        <!-- Clear button and other special functions -->
+        <button class="button">C</button>
+        <button class="button">Clr</button>
+        <button class="button">X2</button>             
+        <button class="button">%</button>
+      </div>
+
+    </div>
+  </div>
+  
+  <!-- Link to external JavaScript file for calculator functionality -->
+  <script src="Calculator.js"></script>
+</body>
+
+</html>

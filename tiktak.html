@@ -1,0 +1,48 @@
+<!DOCTYPE html> 
+<html lang="en">
+<head>
+    <meta charset="UTF-8"> <!-- Sets character encoding -->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- Ensures proper scaling on mobile devices -->
+    <link rel ="stylesheet" href="tiktak.css"/> <!-- Links the external CSS file for styling -->
+    <title>Tic-Tac-Toe Game</title> <!-- Page title -->
+</head>
+<body>
+    <!-- Container to display the message when a player wins -->
+    <div class="msg-container hide"> 
+        <p id="msg">Winner</p> <!-- Placeholder for displaying the winner -->
+    </div>
+
+    <section class="section"> 
+    <div class="players-turn  ">
+        <p id="msg2"> </p>
+    </div>
+    <!-- Button to start a new game -->
+    <button id="new-btn">New Game</button>
+    </section>
+
+   <main>
+    <h1>🎮 Tic-Tac-Toe 🎮</h1> <!-- Game title -->
+    <!-- Main game container -->
+    <div class ="container">
+        <div class="game">
+            <!-- 9 buttons representing the Tic-Tac-Toe grid -->
+            <button class="box"> </button>
+            <button class="box"> </button>
+            <button class="box"> </button>
+            <button class="box"> </button>
+            <button class="box"> </button>
+            <button class="box"> </button>
+            <button class="box"> </button>
+            <button class="box"> </button>
+            <button class="box"> </button>
+        </div>
+    </div>
+
+    <!-- Button to reset the game -->
+    <button id="reset-btn">Reset Game</button>
+   </main>
+
+    <!-- Links the external JavaScript file -->
+    <script src ="tiktak.js"> </script>
+</body>
+</html>

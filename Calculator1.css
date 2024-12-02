@@ -1,0 +1,30 @@
+  /* Background color for the whole page */
+body {
+  background-color: silver;
+}
+
+/* Center text alignment and color for the heading */
+.text-center {
+  text-align: center;
+  color: #434242;
+}
+
+/* Utility classes for centering content */
+.mx-auto {
+  margin: auto;
+}
+
+/* Flexbox layout */
+.flex {
+  display: flex;
+}
+
+/* Flexbox column direction */
+.flex-col {
+  flex-direction: column;
+}
+
+/* Align items in the center */
+.items-center {
+  align-items: center;
+}
