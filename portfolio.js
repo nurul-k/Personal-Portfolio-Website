@@ -15,7 +15,7 @@ document.addEventListener('DOMContentLoaded', () => {
       if (event.target.classList.contains('btn')) {
         if (event.target.textContent.includes('Resume')) {
           //  resume file
-          window.open('Resume10.pdf', '_blank');
+          window.open('Nurul_Khan_Web_Developer_Resume.pdf', '_blank');
         } else if (event.target.textContent.includes('LinkedIn')) {
           //  LinkedIn URL
           window.open('https://www.linkedin.com/in/nurul-khan-2b7a632b5/', '_blank');
