@@ -31,7 +31,7 @@ Copy code
 1. Clone the Repository
 bash
 Copy code
-git clone https://github.com/nurul-khan786/Personal-Portfolio-Website
+git clone https://github.com/nurul-k/Personal-Portfolio-Website
 2. Open in Browser
 Open index.html in your browser to view the website.
 
@@ -43,7 +43,7 @@ Feel free to reach out if you'd like to collaborate or have any questions:
 
 Email: noorulk321@gmail.com
 
-GitHub: nurul-khan786
+GitHub: nurul-k
 
 LinkedIn: @Nurul Khan
 
