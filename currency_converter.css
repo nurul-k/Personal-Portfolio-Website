@@ -73,3 +73,177 @@
    font-size: 1.15rem;
    cursor: pointer;
 } 
+/* Reset + better box sizing */
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+/* Page layout */
+body {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #97A87A;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
+  padding: 1rem; /* space around on small screens */
+}
+
+/* Card container */
+.container {
+  background-color: #A8BBA3;
+  padding: 1.5rem 1.75rem 2rem;
+  border-radius: 1rem;
+  width: 100%;
+  max-width: 419px;        /* responsive width */
+  min-height: 45vh;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5);
+}
+
+/* Title */
+h2 {
+  text-align: center;
+  font-size: clamp(1.5rem, 2vw + 1rem, 2rem);
+}
+
+form {
+  margin: 1.5rem 0 0;
+}
+
+form select,
+form button,
+form input {
+  width: 100%;
+  border: none;
+  outline: none;
+  border-radius: 0.75rem;
+  font-size: 1rem;
+}
+
+/* Labels */
+.amount p,
+.from p,
+.to p {
+  font-size: 0.9rem;
+  margin-bottom: 0.4rem;
+}
+
+/* Amount input */
+.amount input {
+  border: 1px solid lightgray;
+  height: 3rem;
+  padding: 0 0.75rem;
+}
+
+/* ---------- DROPDOWNS (mobile-first: vertical) ---------- */
+
+.dropdown {
+  display: flex;
+  flex-direction: column;  /* stack on small screens */
+  gap: 1rem;
+  margin-top: 1.5rem;
+}
+
+.dropdown i {
+  font-size: 1.5rem;
+  align-self: center;
+  transform: rotate(90deg); /* looks better between vertical blocks */
+  color: #333;
+}
+
+/* Select + flag wrapper */
+.select-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 0.5rem;
+  width: 100%;
+  border-radius: 0.5rem;
+  border: 1px solid rgb(175, 165, 165);
+  padding: 0 0.5rem;
+  background: #fdfdfd;
+}
+
+.select-container img {
+  max-width: 2rem;
+}
+
+.select-container select {
+  font-size: 0.95rem;
+  background: transparent;
+}
+
+/* ---------- RESULT + BUTTON ---------- */
+
+.msg {
+  margin: 1.5rem 0;
+  font-size: 0.95rem;
+  text-align: center;
+  word-break: break-word; /* avoid overflow on tiny screens */
+}
+
+form button {
+  height: 3rem;
+  background-color: #FCF9EA;
+  color: black;
+  font-size: 1.05rem;
+  font-weight: 700;
+  cursor: pointer;
+  border-radius: 0.75rem;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+form button:hover {
+  background-color: #FFA239;
+  transform: translateY(-1px);
+}
+
+form button:active {
+  transform: translateY(0);
+}
+
+/* Let button be full width (no fixed 150px) */
+.submit-btn {
+  width: 100%;
+}
+
+/* ---------- TABLET AND UP ---------- */
+
+@media (min-width: 600px) {
+  .container {
+    padding: 2rem 2.5rem;
+  }
+
+  .dropdown {
+    flex-direction: row;          /* side by side on wider screens */
+    align-items: center;
+    justify-content: space-between;
+  }
+
+  .dropdown i {
+    transform: none;
+    margin: 0 0.5rem;
+    margin-top: 20px;
+  }
+
+  .select-container {
+    max-width: 8rem;
+  }
+
+  .msg {
+    text-align: left;
+  }
+}
+
+/* ---------- LARGE DESKTOPS ---------- */
+
+@media (min-width: 900px) {
+  .container {
+    max-width: 380px;
+  }
+}
+
