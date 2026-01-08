@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Snake Game</title>
+  <link rel="stylesheet" href="snakeGame.css" />
+</head>
+<body>
+  <main class="page">
+    <h1 class="title">Snake Game</h1>
+
+    <section class="game-container">
+      <header class="game-header">
+        <div class="score-box">
+          <span>Score:</span>
+          <span id="score">0</span>
+        </div>
+        <div class="score-box">
+          <span>High score:</span>
+          <span id="high-score">0</span>
+        </div>
+      </header>
+
+      <div class="game-board-wrapper">
+        <!-- Logical size is 21x21 cells, CSS scales it for responsiveness -->
+        <canvas
+          id="game-board"
+          width="21"
+          height="21"
+          aria-label="Snake game board"
+          role="img"
+        ></canvas>
+
+        <div id="overlay" class="overlay">
+          <p id="status-message">Press Start or Space to Play</p>
+          <button id="start-button" type="button">Start Game</button>
+        </div>
+      </div>
+
+      <p class="hint">
+        Desktop: use Arrow keys or W / A / S / D. &nbsp;Mobile: use the on-screen controls.
+      </p>
+
+      <!-- Mobile / touch controls -->
+      <div class="controls">
+        <div class="controls-row">
+          <button class="control-btn" data-direction="up">▲</button>
+        </div>
+        <div class="controls-row">
+          <button class="control-btn" data-direction="left">◀</button>
+          <button class="control-btn" data-direction="down">▼</button>
+          <button class="control-btn" data-direction="right">▶</button>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <script src="snakeGame.js"></script>
+</body>
+</html>
